@@ -1,14 +1,15 @@
-import React, { lazy, Suspense } from 'react';
-import { Skeleton } from 'antd';
-import { Switch, Route } from 'react-router-dom';
-import { ConnectedRouter } from 'connected-react-router';
-import configStore from '../store';
-import Login from '../pages/login';
-const HomePage = lazy(() => import('../pages/home'));
-const DetailPage = lazy(() => import('../pages/detail'));
-const CartShopping = lazy(() => import('../pages/cart/index'));
-const CategoryPage = lazy(() => import('../pages/categories'));
-const OrderShopping = lazy(() => import('../pages/cart/Order'));
+import React, { lazy, Suspense } from "react";
+import { Skeleton } from "antd";
+import { Switch, Route } from "react-router-dom";
+import { ConnectedRouter } from "connected-react-router";
+import configStore from "../store";
+import Login from "../pages/login";
+const HomePage = lazy(() => import("../pages/home"));
+const DetailPage = lazy(() => import("../pages/detail"));
+const CartShopping = lazy(() => import("../pages/cart/index"));
+const CategoryPage = lazy(() => import("../pages/categories"));
+const OrderShopping = lazy(() => import("../pages/cart/Order"));
+// const SearchShoping = lazy(() => import("../components/Search"));
 
 const { history } = configStore();
 const RouteApp = () => {
@@ -34,6 +35,9 @@ const RouteApp = () => {
           <Route path="/Order">
             <OrderShopping />
           </Route>
+          {/* <Route path="/Search">
+            <SearchShoping />
+          </Route> */}
         </Switch>
       </Suspense>
     </ConnectedRouter>
