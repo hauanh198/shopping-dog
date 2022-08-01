@@ -83,9 +83,12 @@ const HeaderShopping = () => {
           </ul>
 
           <div className="icon">
+            
+            <Link to="/login">
             <div className="icon_item">
               <PersonOutlineIcon style={{ fontSize: 25 }} />
             </div>
+            </Link>
 
             <Link to="/cart">
               <div className="icon_item">
@@ -104,17 +107,10 @@ const HeaderShopping = () => {
         </div>
       </div>
 
-      {/* <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-        <Menu.Item key="/">
-          <Link to="/"> Products</Link>
-        </Menu.Item>
-        <Menu.Item key="cart">
-          <Link to="/cart">cart ({numberCart})</Link>
-        </Menu.Item>
-        <Menu.Item key="login">
-          <Link to="/login">Login</Link>
-        </Menu.Item>
-      </Menu> */}
+      
+        {/* <Menu.Item key="login">
+          
+        </Menu.Item> */}
     </Header>
   );
 };
