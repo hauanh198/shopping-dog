@@ -9,7 +9,7 @@ const DetailPage = lazy(() => import("../pages/detail"));
 const CartShopping = lazy(() => import("../pages/cart/index"));
 const CategoryPage = lazy(() => import("../pages/categories"));
 const OrderShopping = lazy(() => import("../pages/cart/Order"));
-// const SearchShoping = lazy(() => import("../components/Search"));
+const SearchShoping = lazy(() => import("../components/Search"));
 
 const { history } = configStore();
 const RouteApp = () => {
@@ -35,9 +35,9 @@ const RouteApp = () => {
           <Route path="/Order">
             <OrderShopping />
           </Route>
-          {/* <Route path="/Search">
+          <Route path="/Search">
             <SearchShoping />
-          </Route> */}
+          </Route>
         </Switch>
       </Suspense>
     </ConnectedRouter>

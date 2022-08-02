@@ -97,10 +97,18 @@ const HeaderShopping = () => {
                 </Badge>
               </div>
             </Link>
-
-            <div className="icon_item">
+            <Link to="/Search">
+              <div className="icon_item">
+                <Badge>
+                <SearchIcon style={{ fontSize: 25 }} />
+                </Badge>
+              </div>
+            </Link>
+            {/* <div className="icon_item">
               <SearchIcon style={{ fontSize: 25 }} />
-            </div>
+            </div> */}
+
+
             {/* <PersonOutlineIcon />
             <ShoppingCartIcon /> */}
           </div>
