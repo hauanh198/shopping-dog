@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { getDataProductLatest } from "../../../reselect/reselect";
 import { helpers } from "../../../helpers/common";
-import logo_header from "../../../img/hinhnenpet.jpg";
+import logo_header from "../../../img/mainimg.png";
 const Product = () => {
   const { latest } = useSelector(
     createStructuredSelector({
@@ -24,7 +24,7 @@ const Product = () => {
             <img
               src={logo_header}
               alt="Error_image"
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              style={{ width: "100%", height: "826px", objectFit: "initial" }}
             />
           </div>
         </Col>
