@@ -4,7 +4,6 @@ import { Form, Input, Button, Checkbox, Col, Row } from "antd";
 import { loginRequestAction } from "../../actions";
 import { loginFailMessage } from "../../reselect/reselect";
 import { createStructuredSelector } from "reselect";
-import { Link } from "react-router-dom";
 const Login = () => {
   const { loginFail } = useSelector(
     createStructuredSelector({
@@ -83,7 +82,6 @@ const Login = () => {
             }}
           >
             <Button type="primary" htmlType="submit" >
-              {/* <Link to={"/"} >Login</Link> */}
               Login
               
             </Button>

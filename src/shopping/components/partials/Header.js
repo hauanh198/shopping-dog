@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import logo from '../../img/pet-shop.jpg';
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import SearchIcon from '@material-ui/icons/Search';
 import Badge from '@material-ui/core/Badge';
 import { makeStyles } from '@material-ui/core/styles';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
@@ -99,13 +98,6 @@ const HeaderShopping = () => {
               </div>
             </Link>
             <SearchDog/>
-            {/* <Link to="/Search">
-              <div className="icon_item">
-                <Badge>
-                <SearchIcon style={{ fontSize: 25 }} />
-                </Badge>
-              </div>
-            </Link> */}
           </div>
         </div>
       </div>

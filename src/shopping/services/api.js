@@ -310,7 +310,22 @@ const getDataProductById = async (id) => {
   }
   return data;
 };
+
+const getDataProductByName = async (name) => {
+  name = String(name);
+  let data = {};
+  data = getDataProducts.featured.find((item) => item.name === name);
+  if (data === undefined) {
+    data = getDataProducts.latest.find((item) => item.name === name);
+    if (data === undefined) {
+      data = getDataProducts.top_selling.find((item) => item.name === name);
+    }
+  }
+  return data;
+};
+
 export const api = {
   getDataProducts,
   getDataProductById,
+  getDataProductByName
 };

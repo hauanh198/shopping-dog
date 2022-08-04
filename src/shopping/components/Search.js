@@ -21,8 +21,7 @@ const searchResult = (query) =>
             <span>
               Found {query} on{' '}
               <a
-                href={`https://s.taobao.com/search?q=${query}`}
-                target="_blank"
+                href={`getDataProducts/search?q=${query}`}
                 rel="noopener noreferrer"
               >
                 {category}
@@ -60,4 +59,4 @@ const SearchDog = () => {
   );
 };
 
-export default React.memo(SearchDog);
+export default React.memo(SearchDog) ;
