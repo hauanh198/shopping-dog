@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { getDataProductLatest } from "../../../reselect/reselect";
 import { helpers } from "../../../helpers/common";
-import logo_header from "../../../img/mainimg.png";
+import logo_header from "../../../img/hinhnenpets 1.jpg";
 const Product = () => {
   const { latest } = useSelector(
     createStructuredSelector({

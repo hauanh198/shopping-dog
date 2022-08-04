@@ -15,7 +15,7 @@ import { changeQuantityCartAction } from "../../actions";
 import NumberFormat from "react-number-format";
 import "../home/style.css";
 import "../../../shopping/styles/product.css";
-import logo_header from "../../img/mainimg.png";
+import logo_header from "../../img/hinhnenpets 1.jpg";
 import Checkout from "./Checkout";
 // s
 const CartShopping = () => {
