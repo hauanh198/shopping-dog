@@ -70,10 +70,15 @@ a {
 }
 .icon {
   display: flex;
+  align-items: center;
 }
 .icon .icon_item {
   margin-right: 20px;
   cursor: pointer;
   color: black;
   display: flex;
+}
+.ant-col .ant-col-24{
+  margin: 5px;
+  flex: 0 0.5 100%;
 }

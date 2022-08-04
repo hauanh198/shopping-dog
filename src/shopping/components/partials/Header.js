@@ -9,6 +9,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import Badge from '@material-ui/core/Badge';
 import { makeStyles } from '@material-ui/core/styles';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
+import SearchDog from "../Search"
 const useStyles = makeStyles(theme => ({
   list_category: {
     borderBottom: '1px solid #ebebeb'
@@ -97,20 +98,14 @@ const HeaderShopping = () => {
                 </Badge>
               </div>
             </Link>
-            <Link to="/Search">
+            <SearchDog/>
+            {/* <Link to="/Search">
               <div className="icon_item">
                 <Badge>
                 <SearchIcon style={{ fontSize: 25 }} />
                 </Badge>
               </div>
-            </Link>
-            {/* <div className="icon_item">
-              <SearchIcon style={{ fontSize: 25 }} />
-            </div> */}
-
-
-            {/* <PersonOutlineIcon />
-            <ShoppingCartIcon /> */}
+            </Link> */}
           </div>
         </div>
       </div>

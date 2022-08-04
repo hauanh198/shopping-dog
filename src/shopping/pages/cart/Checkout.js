@@ -234,7 +234,7 @@ const CheckoutShopping = () => {
                         {
                           required: true,
                           message: "Not valid phone number",
-                          pattern: new RegExp("^[0-9-+]{9,15}$"),
+                          pattern: new RegExp("^[0-9-+]{10,11}$"),
                         },
                       ]}
                       style={{ width: 310 }}

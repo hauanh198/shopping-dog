@@ -73,7 +73,9 @@ export const removetCartAction = (productId, quantity) => ({
 export const ClearCart = () => ({
   type: types.CLEAR_CART,
 });
-
+// export const ClearOrderCart = () => ({
+//   type: types.ClearOrderCart,
+// });
 // LOGIN
 export const loginRequestAction = (email, password) => ({
   type: types.LOGIN_REQUEST,

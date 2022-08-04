@@ -82,8 +82,9 @@ const Login = () => {
               span: 16,
             }}
           >
-            <Button type="primary" htmlType="submit">
-              <Link to={"/"} >Login</Link>
+            <Button type="primary" htmlType="submit" >
+              {/* <Link to={"/"} >Login</Link> */}
+              Login
               
             </Button>
           </Form.Item>

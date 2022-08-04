@@ -4,7 +4,7 @@ import RouteApp from './routers';
 import configStore from "./store";
 const {store} = configStore();
 const Shopping = () =>{
-
+    
     return(
     <Provider store = {store}>
         <RouteApp/>
