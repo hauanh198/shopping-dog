@@ -1,14 +1,11 @@
 import { AutoComplete, Input } from 'antd';
 import React, { useState } from 'react';
-
+import { api } from '../services/api';
 const getRandomInt = (max, min = 0) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const searchResult = (query) =>
-  new Array(getRandomInt(5))
-    .join('.')
-    .split('.')
-    .map((_, idx) => {
-      const category = `${query}${idx}`;
+  api.getDataProducts.featured.filter((_, name) => {
+      const category = `${query}${name}`;
       return {
         value: category,
         label: (
@@ -19,9 +16,9 @@ const searchResult = (query) =>
             }}
           >
             <span>
-              Found {query} on{' '}
+              Found {query} on{'name'}
               <a
-                href={`getDataProducts/search?q=${query}`}
+                href={`${query}`}
                 rel="noopener noreferrer"
               >
                 {category}
