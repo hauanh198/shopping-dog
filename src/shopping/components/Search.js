@@ -4,8 +4,8 @@ import { api } from '../services/api';
 const getRandomInt = (max, min = 0) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const searchResult = (query) =>
-  api.getDataProducts.featured.filter((_, name) => {
-      const category = `${query}${name}`;
+  api.getDataProducts.featured.filter((_, id) => { // lấy data từ mảng ra
+      const category = `${query}${id}`;
       return {
         value: category,
         label: (
@@ -16,9 +16,9 @@ const searchResult = (query) =>
             }}
           >
             <span>
-              Found {query} on{'name'}
+              Found {query} on{' '}
               <a
-                href={`${query}`}
+                href={`searchResult${query}`}
                 rel="noopener noreferrer"
               >
                 {category}
