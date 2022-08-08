@@ -101,17 +101,16 @@ p {
 .heading_text_center {
   margin: 0 auto;
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 20px 15px;
 }
 
-.heading_text_center span {
-  display: inline-block;
-  width: 30%;
-  font-size: 14px;
+.heading_text_center .text {
+  display: block;
+  width: 100%;
+  font-size: 23px;
   line-height: 24px;
   letter-spacing: 0.1px;
-  color: #666666;
+  color: #400b0b;
   font-family: 'Playfair Display', serif;
 }
 .image_header_shoppingcart {

@@ -32,25 +32,27 @@ a {
 }
 .container_header {
   height: 80px;
-  background-color: white;
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #ffffff;
   box-shadow: 0 0 5px rgb(0 0 0 / 20%);
   position: fixed;
-
-  z-index: 1;
+  z-index: 999;
   width: 100%;
 }
 .container_header_logo {
   width: 1176px;
-  height: 131px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
+  background: #ffffff;
+  position: relative;
+  z-index: 99;
 }
 .menu_icon {
   display: flex;

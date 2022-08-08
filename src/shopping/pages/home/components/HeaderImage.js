@@ -31,10 +31,10 @@ const Product = () => {
         <Col span={24}>
           <div className="heading_text_center">
             <h4>NEW ARRIVAL</h4>
-            <span>
+            <p className="text">
               shop Chó Mèo gần đây, shop Chó Mèo Hà Nội, phụ kiện chó mèo Hà Nội
               , Pet shop Hà Nội, Cát Mèo Hà Nội,Hà Nội Pet Shop
-            </span>
+            </p>
           </div>
         </Col>
       </Row>
