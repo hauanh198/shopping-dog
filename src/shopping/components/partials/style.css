@@ -1,0 +1,41 @@
+.ant-list-item-meta{
+    align-items: center;
+}
+.f_box{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1030px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.f_box-right{
+
+}
+.f_box-right .phone{
+    font-size: 22px;
+    color: #000;
+    display: flex;
+
+}
+.f_box-right .phone span{
+    margin-left: 10px;
+    font-size: 36px;
+    color: #c57f7f;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+}
+.f_box-right .address ,
+.f_box-right .time ,
+.f_box-right .note
+{
+    font-size: 18px;
+    color: #000;
+}
+.f_box-right .time span{
+    color: red;
+    font-weight: 300;
+}
+.copyright{
+    text-align: center;
+}
