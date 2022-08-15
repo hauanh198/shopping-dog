@@ -28,7 +28,6 @@ const FooterShopping = () => {
             renderItem={(item) => (
               <List.Item>
                 <List.Item.Meta
-                  avatar={<Avatar src="" />}
                   title={<a href="/">{item.title}</a>}
                   description=""
                 />
