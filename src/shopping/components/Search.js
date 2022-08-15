@@ -1,31 +1,23 @@
-import { AutoComplete, Input, Icon } from "antd";
+import { AutoComplete, Input } from "antd";
 import React, { useState } from "react";
 import { api } from "../services/api";
 import { RiSearchLine } from "react-icons/ri";
+import 'antd/dist/antd.css';
+import './search.css'
 
 const getRandomInt = (max, min = 0) =>
   Math.floor(Math.random() * (max - min + 1)) + min;
 
-const searchResult = (query) =>
-  api.getDataProducts.featured.filter((_, id) => {
+const searchResult = (items) =>
+items.map((item, name) => {
     // lấy data từ mảng ra
-    const category = `${query}${id}`;
+    console.log('category',item);
     return {
-      value: category,
+      value: item.name,
       label: (
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-          }}
-        >
-          <span>
-            Found {query} on{" "}
-            <a href={`searchResult${query}`} rel="noopener noreferrer">
-              {category}
-            </a>
-          </span>
-          <span>{getRandomInt(200, 100)} results</span>
+        <div className="box">
+          <span><img src={item.image}></img></span>
+          <span>{item.name}</span>
         </div>
       ),
     };
@@ -49,16 +41,16 @@ const SearchDog = () => {
   const [options, setOptions] = useState([]);
 
   const handleSearch = (value) => {
+    console.log(value);
     let items;
-    if (value.length > 3) {
+    if (value.length > 0) {
       items = findNames(value);
       if (items.length > 0) {
-        setOptions(value ? searchResult(value) : []);
+        setOptions(value ? searchResult(items) : []);
       }
     }
-
-    console.log(items);
-    //setOptions(value ? searchResult(value) : []);
+    // setOptions(value ? searchResult(items) : []);
+    
   };
 
   const onSelect = (value) => {};
